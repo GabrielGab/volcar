@@ -17,8 +17,8 @@ var document = term.createDocument( {
     data.Humidity= 38.6 ;
     data.AquaTemp= 26.12 ;
     data.LDR= 934 ;
-	data.Count= 391 ;
-	data.time = "wainting 1st ping" ; //(new Date).toLocaleTimeString() 
+    data.Count= 391 ;
+    data.time = "wainting 1st ping" ; //(new Date).toLocaleTimeString() 
 
  setInterval( GetData , 30 * 1000)
  setInterval( PutData ,   5 * 1000);
@@ -57,12 +57,15 @@ async function PutData(){
    
 // console.log( pad(data.AquaTemp ))
  
-   setText(5,5,"Counter  : .. " , pad(data.Count ))
-   setText(5,6,"AquaTemp : .. " , pad(data.AquaTemp ),"red" )
-    setText(5,7,"TempExt  : .. " , pad(data.TempExt ))
-   setText(5,8,"LDR      : .. " , pad(data.LDR ))
-   setText(5,9,"Humidity : .. " , pad(data.Humidity ))
+   setText(5,05,"Counter  : .. " , pad(data.Count ))
+   setText(5,06,"AquaTemp : .. " , pad(data.AquaTemp ),"red" )
+   setText(5,07,"TempExt  : .. " , pad(data.TempExt ))
+   setText(5,08,"LDR      : .. " , pad(data.LDR ))
+   setText(5,09,"Humidity : .. " , pad(data.Humidity ))
+   setText(5,10,"TimeGet  : .. " , pad(data.Time  ))
 
+	
+	
    setSignal(3,5,"="  )
    setSignal(3,6,"+" ,"red" )
    setSignal(3,7,"=" )
