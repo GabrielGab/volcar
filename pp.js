@@ -1,4 +1,4 @@
-"use strict" ;
+//"use strict" ;
 
 var termkit = require( 'terminal-kit' ) ;
 var axios = require('axios') ;
