@@ -36,7 +36,7 @@ async function GetData(){
    data = resp.data ;   
   // console.log(data)
     data.time = (new Date).toLocaleTimeString() 
-  
+  term.bell() ;
 }
 
 
@@ -78,7 +78,7 @@ async function PutData(){
    Counter = Counter + 1;
    setText(35,5,"Counter int : " , Counter  + "-- Time : " + (new Date).toLocaleTimeString() )
    setText(35,9,"Last Ping   : " , data.time )
-   term.bell() ;
+   
 
   /*
 	un Dashboard con ups and down de las vaariables 
