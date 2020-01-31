@@ -62,7 +62,7 @@ async function PutData(){
    setText(5,07,"TempExt  : .. " , pad(data.TempExt ))
    setText(5,08,"LDR      : .. " , pad(data.LDR ))
    setText(5,09,"Humidity : .. " , pad(data.Humidity ))
-   setText(5,10,"TimeGet  : .. " , pad(data.Time  ))
+   setText(5,10,"TimeGet  : .. " , data.Time  )
 
 	
 	
