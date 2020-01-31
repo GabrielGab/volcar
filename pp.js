@@ -18,7 +18,7 @@ var document = term.createDocument( {
     data.AquaTemp= 26.12 ;
     data.LDR= 934 ;
     data.Count= 391 ;
-    data.time = "wainting 1st ping" ; //(new Date).toLocaleTimeString() 
+    data.time = "Waiting 1st ping" ; //(new Date).toLocaleTimeString() 
 
  setInterval( GetData , 30 * 1000)
  setInterval( PutData ,   5 * 1000);
